@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Файловый загрузчик</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Uploader</title>
 </head>
 <body>
-
-<h1>Загрузка файла</h1>
-
-<form action="/upload" method="post" enctype="multipart/form-data">
-  <input type="file" name="file" accept="image/*, .pdf, .txt" />
-  <input type="submit" value="Загрузить" />
-</form>
-
+  <h1>Upload Your Files</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="file">Select file:</label>
+    <input type="file" name="file" accept="image/*, .pdf, .txt" required />
+    <br><br>
+    <input type="submit" value="Upload" />
+  </form>
 </body>
 </html>

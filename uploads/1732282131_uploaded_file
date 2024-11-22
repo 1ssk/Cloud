@@ -1,0 +1,9 @@
+let password = "1234-"
+const v1 = "-"
+const v2 = "_"
+
+if (password.length >= 4 && (password.includes(v1) || password.includes(v2))) {
+    console.log("Пароль надёжный") 
+} else {
+    console.log("Пароль недостаточно надежный")
+}
